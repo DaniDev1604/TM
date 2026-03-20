@@ -41,10 +41,10 @@ if img_file_buffer is not None:
     prediction = model.predict(data)
     print(prediction)
     if prediction[0][0]>0.5:
-      st.header('licencia, con Probabilidad: '+str( prediction[0][0]) )
+      st.header('Ok, con Probabilidad: '+str( prediction[0][0]) )
     if prediction[0][1]>0.5:
-      st.header('estuche, con Probabilidad: '+str( prediction[0][1]))
-    if prediction[0][2]>0.5:
-      st.header('Audifonos, con Probabilidad: '+str( prediction[0][2]))
+      st.header('No, con Probabilidad: '+str( prediction[0][1]))
+    #if prediction[0][2]>0.5:
+      #st.header('Audifonos, con Probabilidad: '+str( prediction[0][2]))
 
 
